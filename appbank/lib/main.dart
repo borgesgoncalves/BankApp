@@ -1,6 +1,8 @@
 import 'dart:js';
 
+import 'package:appbank/pages/cotacao.dart';
 import 'package:appbank/pages/home_page.dart';
+import 'package:appbank/pages/login_page.dart';
 import 'package:appbank/pages/transferencia.dart';
 import 'package:appbank/repositories/saldo.dart';
 import 'package:flutter/material.dart';
@@ -20,10 +22,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         title: 'App Bank',
         debugShowCheckedModeBanner: false,
-        theme: ThemeData(
-          primarySwatch: Colors.blue,
-        ),
-        home: Home(),
-        routes: {'/Transferencia': (context) => Transferencia()});
+        theme: ThemeData(primarySwatch: Colors.deepOrange),
+        home: Login(),
+        routes: {
+          '/Transferencia': (context) => Transferencia(),
+          '/Home': (context) => Home(),
+          '/Cotacao': (context) => TelaCota()
+        });
   }
 }
