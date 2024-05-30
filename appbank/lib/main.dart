@@ -1,5 +1,3 @@
-import 'dart:js';
-
 import 'package:appbank/pages/cotacao.dart';
 import 'package:appbank/pages/home_page.dart';
 import 'package:appbank/pages/login_page.dart';
